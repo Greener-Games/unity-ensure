@@ -1,9 +1,10 @@
-﻿using UnityEditor;
+﻿using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 namespace UnityEnsure
 {
-    public class EnsureUnityElements
+    public static class EnsureUnityElements
     {
         [InitializeOnLoadMethod]
         static void EnsureScriptingDefineSymbol()
@@ -13,12 +14,25 @@ namespace UnityEnsure
         /// <summary>
         /// Ensure the Define Symbol Exists
         /// </summary>
-        /// <param name="list"></param>
-        public static void EnsureScriptingDefineSymbol(params string[] list)
+        /// <param name="defines"></param>
+        public static void EnsureScriptingDefineSymbol(params string[] defines)
         {
-            foreach (string s in list)
+            foreach (string s in defines)
             {
                 DefineSymbols.Add(s);
+            }
+        }
+
+        /// <summary>
+        /// Ensure the Define Symbol Exists
+        /// </summary>
+        /// <param name="targetGroups">Target platforms</param>
+        /// <param name="defines"></param>
+        public static void EnsureScriptingDefineSymbol(List<BuildTargetGroup> targetGroups, params string[] defines)
+        {
+            foreach (string s in defines)
+            {
+                DefineSymbols.Add(s, targetGroups);
             }
         }
 
@@ -30,41 +44,46 @@ namespace UnityEnsure
         {
             foreach (string layer in list)
             {
-                if (string.IsNullOrEmpty(layer))
-                {
-                    throw new System.ArgumentNullException(layer, "New layer name string is either null or empty.");
-                }
+                AddLayer(layer);
+            }
+        }
 
-                SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
-                SerializedProperty layerProps = tagManager.FindProperty("layers");
-                int propCount = layerProps.arraySize;
+        static void AddLayer(string layer)
+        {
+            if (string.IsNullOrEmpty(layer))
+            {
+                throw new System.ArgumentNullException(layer, "New layer name string is either null or empty.");
+            }
 
-                SerializedProperty firstEmptyProp = null;
+            SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
+            SerializedProperty layerProps = tagManager.FindProperty("layers");
+            int propCount = layerProps.arraySize;
 
-                for (int i = 0; i < propCount; i++)
-                {
-                    SerializedProperty layerProp = layerProps.GetArrayElementAtIndex(i);
+            SerializedProperty firstEmptyProp = null;
 
-                    string stringValue = layerProp.stringValue;
+            for (int i = 0; i < propCount; i++)
+            {
+                SerializedProperty layerProp = layerProps.GetArrayElementAtIndex(i);
 
-                    if (stringValue == layer) return;
+                string stringValue = layerProp.stringValue;
 
-                    if (i < 8 || stringValue != string.Empty) continue;
+                if (stringValue == layer) return;
 
-                    if (firstEmptyProp == null)
-                        firstEmptyProp = layerProp;
-                }
+                if (i < 8 || stringValue != string.Empty) continue;
 
                 if (firstEmptyProp == null)
-                {
-                    Debug.LogError("Maximum limit of " + propCount + " layers exceeded. Layer \"" + layer + "\" not created.");
-                    return;
-                }
-
-                firstEmptyProp.stringValue = layer;
-                tagManager.ApplyModifiedProperties();
-                tagManager.Update();
+                    firstEmptyProp = layerProp;
             }
+
+            if (firstEmptyProp == null)
+            {
+                Debug.LogError("Maximum limit of " + propCount + " layers exceeded. Layer \"" + layer + "\" not created.");
+                return;
+            }
+
+            firstEmptyProp.stringValue = layer;
+            tagManager.ApplyModifiedProperties();
+            tagManager.Update();
         }
     }
 }

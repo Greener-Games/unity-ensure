@@ -10,9 +10,9 @@ namespace UnityEnsure
     {
         List<string> defineSymbolsList;
         BuildTargetGroup currentSelectedPlatform;
-        static DefineSymbols window;
+        static DefineSymbols _window;
 
-        static readonly List<BuildTargetGroup> targetGroup = new List<BuildTargetGroup>
+        static readonly List<BuildTargetGroup> TargetGroup = new List<BuildTargetGroup>
         {
             BuildTargetGroup.Standalone,
             BuildTargetGroup.Android,
@@ -23,38 +23,37 @@ namespace UnityEnsure
         [MenuItem("Window/Editor Extensions/Scripting Define Symbols %i")]
         public static void Init()
         {
-            window = (DefineSymbols) GetWindow(typeof(DefineSymbols), true);
+            _window = (DefineSymbols) GetWindow(typeof(DefineSymbols), true);
 
-            window.currentSelectedPlatform = BuildTargetGroup.Standalone;
+            _window.currentSelectedPlatform = BuildTargetGroup.Standalone;
 
-            window.defineSymbolsList = new List<string>();
+            _window.defineSymbolsList = new List<string>();
 
-            GetAllSymbolsFromPlayerSettings(window.currentSelectedPlatform, ref window.defineSymbolsList);
+            GetAllSymbolsFromPlayerSettings(_window.currentSelectedPlatform, ref _window.defineSymbolsList);
 
-            window.Show();
+            _window.Show();
         }
 
         void OnGUI()
         {
-            if (window == null)
+            if (_window == null)
             {
                 // sometimes  object instance loses, could n't find reason for this
                 Debug.LogError("Something went wrong");
-                window = GetWindow<DefineSymbols>();
-                //return;
+                _window = GetWindow<DefineSymbols>();
             }
 
             GUILayout.Label("Add or Remove Scripting Define symbols", EditorStyles.boldLabel);
 
             GUILayout.BeginHorizontal();
 
-            for (int i = 0; i < targetGroup.Count; i++)
+            for (int i = 0; i < TargetGroup.Count; i++)
             {
-                BuildTargetGroup iterTarget = targetGroup[i];
+                BuildTargetGroup iterTarget = TargetGroup[i];
 
                 GUIStyle btnStyle = new GUIStyle(GUI.skin.button);
 
-                if (window.currentSelectedPlatform == iterTarget)
+                if (_window.currentSelectedPlatform == iterTarget)
                 {
                     btnStyle.normal.background = btnStyle.active.background;
                 }
@@ -64,52 +63,52 @@ namespace UnityEnsure
                     GUI.FocusControl("");
                     List<string> getsavedData = new List<string>();
 
-                    GetAllSymbolsFromPlayerSettings(window.currentSelectedPlatform, ref getsavedData);
+                    GetAllSymbolsFromPlayerSettings(_window.currentSelectedPlatform, ref getsavedData);
 
 
                     List<string> list = new List<string>();
 
-                    window.defineSymbolsList.RemoveAll(x => x == "");
+                    _window.defineSymbolsList.RemoveAll(x => x == "");
 
-                    if (window.defineSymbolsList.Count > getsavedData.Count)
+                    if (_window.defineSymbolsList.Count > getsavedData.Count)
                     {
-                        list = window.defineSymbolsList.Except(getsavedData).ToList();
+                        list = _window.defineSymbolsList.Except(getsavedData).ToList();
                     }
                     else
                     {
-                        list = getsavedData.Except(window.defineSymbolsList).ToList();
+                        list = getsavedData.Except(_window.defineSymbolsList).ToList();
                     }
 
 
                     if (list.Count > 0)
                     {
-                        bool _event = EditorUtility.DisplayDialog("Unapplied changes", "Unapplied changes for " + window.currentSelectedPlatform, "Apply", "Revert");
+                        bool _event = EditorUtility.DisplayDialog("Unapplied changes", "Unapplied changes for " + _window.currentSelectedPlatform, "Apply", "Revert");
 
                         if (_event)
                         {
-                            window.ApplyAllChangesToPlayerSettings(window.currentSelectedPlatform, defineSymbolsList);
+                            _window.ApplyAllChangesToPlayerSettings(_window.currentSelectedPlatform, defineSymbolsList);
                         }
                     }
 
-                    window.currentSelectedPlatform = iterTarget;
+                    _window.currentSelectedPlatform = iterTarget;
 
-                    GetAllSymbolsFromPlayerSettings(window.currentSelectedPlatform, ref window.defineSymbolsList);
+                    GetAllSymbolsFromPlayerSettings(_window.currentSelectedPlatform, ref _window.defineSymbolsList);
                 }
             }
 
             GUILayout.EndHorizontal();
 
-            for (int j = 0; j < window.defineSymbolsList.Count; j++)
+            for (int j = 0; j < _window.defineSymbolsList.Count; j++)
             {
                 GUILayout.BeginHorizontal();
 
                 GUILayout.Label(j.ToString(), GUILayout.MaxWidth(20.0f));
 
-                window.defineSymbolsList[j] = EditorGUILayout.TextField(window.defineSymbolsList[j].ToUpper(), GUILayout.MaxWidth(500.0f));
+                _window.defineSymbolsList[j] = EditorGUILayout.TextField(_window.defineSymbolsList[j].ToUpper(), GUILayout.MaxWidth(500.0f));
 
                 if (GUILayout.Button("-", GUILayout.MaxWidth(40.0f)))
                 {
-                    window.defineSymbolsList.RemoveAt(j);
+                    _window.defineSymbolsList.RemoveAt(j);
                 }
 
                 GUILayout.EndHorizontal();
@@ -118,14 +117,14 @@ namespace UnityEnsure
 
             if (GUILayout.Button("+", GUILayout.Width(50)))
             {
-                window.defineSymbolsList.Add("");
+                _window.defineSymbolsList.Add("");
             }
 
             GUILayout.BeginHorizontal();
 
             if (GUILayout.Button("Apply Changes", GUILayout.Width(200)))
             {
-                window.ApplyAllChangesToPlayerSettings(window.currentSelectedPlatform, defineSymbolsList);
+                _window.ApplyAllChangesToPlayerSettings(_window.currentSelectedPlatform, defineSymbolsList);
             }
 
 
@@ -174,13 +173,26 @@ namespace UnityEnsure
         /// </summary>
         public static void Add(string define, bool applyToAll = true)
         {
-            foreach (BuildTargetGroup buildTargetGroup in targetGroup)
+            List<BuildTargetGroup> groups = new List<BuildTargetGroup>();
+            if (applyToAll)
             {
-                if (!applyToAll && buildTargetGroup != EditorUserBuildSettings.selectedBuildTargetGroup)
-                {
-                    continue;
-                }
+                groups = TargetGroup;
+            }
+            else
+            {
+                groups.Add(EditorUserBuildSettings.selectedBuildTargetGroup);
+            }
                 
+            Add(define, groups);
+        }
+        
+        /// <summary>
+        ///     Add define symbols as soon as Unity gets done compiling.
+        /// </summary>
+        public static void Add(string define, IEnumerable<BuildTargetGroup> groups)
+        {
+            foreach (BuildTargetGroup buildTargetGroup in groups)
+            {
                 string definesString = PlayerSettings.GetScriptingDefineSymbolsForGroup(buildTargetGroup);
                 List<string> allDefines = definesString.Split(';').ToList();
                 if (!allDefines.Contains(define))
@@ -193,7 +205,7 @@ namespace UnityEnsure
 
         public static void Remove(string define, bool applyToAll = true)
         {
-            foreach (BuildTargetGroup buildTargetGroup in targetGroup)
+            foreach (BuildTargetGroup buildTargetGroup in TargetGroup)
             {
                 if (!applyToAll && buildTargetGroup != EditorUserBuildSettings.selectedBuildTargetGroup)
                 {
