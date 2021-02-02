@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace UnityEnsure
+namespace GG.UnityEnsure
 {
     public static class EnsureUnityElements
     {

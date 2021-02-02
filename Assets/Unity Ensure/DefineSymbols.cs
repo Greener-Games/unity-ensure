@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace UnityEnsure
+namespace GG.UnityEnsure
 {
     public class DefineSymbols: EditorWindow
     {
@@ -20,7 +20,7 @@ namespace UnityEnsure
             BuildTargetGroup.WebGL,
         };
         
-        [MenuItem("Window/Editor Extensions/Scripting Define Symbols %i")]
+        [MenuItem("Window/Editor Extensions/Define Symbols")]
         public static void Init()
         {
             _window = (DefineSymbols) GetWindow(typeof(DefineSymbols), true);
