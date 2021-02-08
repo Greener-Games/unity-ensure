@@ -1,0 +1,15 @@
+{
+  "name": "com.greener-games.unity-ensure",
+  "displayName": "Unity Ensure",
+  "description": "Package to add functionality to ensure layers, tags, and Define symobols get set on compliation of a project",
+  "version": "1.0.0",
+  "unity": "2019.3",
+  "license": "MIT",
+  "author": {
+    "name": "Greener Games"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Greener-Games/unity-ensure"
+  }
+}
