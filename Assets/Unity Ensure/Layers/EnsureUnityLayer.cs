@@ -4,38 +4,8 @@ using UnityEngine;
 
 namespace GG.UnityEnsure
 {
-    public static class EnsureUnityElements
+    public static class EnsureUnityLayer
     {
-        [InitializeOnLoadMethod]
-        static void EnsureScriptingDefineSymbol()
-        {
-        }
-
-        /// <summary>
-        /// Ensure the Define Symbol Exists
-        /// </summary>
-        /// <param name="defines"></param>
-        public static void EnsureScriptingDefineSymbol(params string[] defines)
-        {
-            foreach (string s in defines)
-            {
-                DefineSymbols.Add(s);
-            }
-        }
-
-        /// <summary>
-        /// Ensure the Define Symbol Exists
-        /// </summary>
-        /// <param name="targetGroups">Target platforms</param>
-        /// <param name="defines"></param>
-        public static void EnsureScriptingDefineSymbol(List<BuildTargetGroup> targetGroups, params string[] defines)
-        {
-            foreach (string s in defines)
-            {
-                DefineSymbols.Add(s, targetGroups);
-            }
-        }
-
         /// <summary>
         /// Create a layer at the next available index. Returns silently if layer already exists.
         /// </summary>

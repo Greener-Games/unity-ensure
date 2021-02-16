@@ -6,11 +6,11 @@ using UnityEngine;
 
 namespace GG.UnityEnsure
 {
-    public class DefineSymbols: EditorWindow
+    public class DefineSymbolsViewer: EditorWindow
     {
         List<string> defineSymbolsList;
         BuildTargetGroup currentSelectedPlatform;
-        static DefineSymbols _window;
+        static DefineSymbolsViewer _window;
 
         static readonly List<BuildTargetGroup> TargetGroup = new List<BuildTargetGroup>
         {
@@ -23,7 +23,7 @@ namespace GG.UnityEnsure
         [MenuItem("Window/Editor Extensions/Define Symbols")]
         public static void Init()
         {
-            _window = (DefineSymbols) GetWindow(typeof(DefineSymbols), true);
+            _window = (DefineSymbolsViewer) GetWindow(typeof(DefineSymbolsViewer), true);
 
             _window.currentSelectedPlatform = BuildTargetGroup.Standalone;
 
@@ -40,7 +40,7 @@ namespace GG.UnityEnsure
             {
                 // sometimes  object instance loses, could n't find reason for this
                 Debug.LogError("Something went wrong");
-                _window = GetWindow<DefineSymbols>();
+                _window = GetWindow<DefineSymbolsViewer>();
             }
 
             GUILayout.Label("Add or Remove Scripting Define symbols", EditorStyles.boldLabel);
