@@ -20,7 +20,7 @@ namespace GG.UnityEnsure
             BuildTargetGroup.WebGL,
         };
         
-        [MenuItem("Window/Editor Extensions/Define Symbols")]
+        [MenuItem("Window/Editor Extensions/View Define Symbols")]
         public static void Init()
         {
             _window = (DefineSymbolsViewer) GetWindow(typeof(DefineSymbolsViewer), true);
