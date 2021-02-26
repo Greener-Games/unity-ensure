@@ -1,17 +1,10 @@
 {
   "scopedRegistries": [
     {
-      "name": "hello",
-      "url": "http://Test",
+      "name": "tester",
+      "url": "https://greenergames.jfrog.io/artifactory/api/npm/NpmServer",
       "scopes": [
-        "Test2"
-      ]
-    },
-    {
-      "name": "waffles",
-      "url": "http://Test2",
-      "scopes": [
-        "Test3"
+        "com.greener-games"
       ]
     }
   ],
