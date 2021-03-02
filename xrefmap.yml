@@ -1,0 +1,304 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: GG.UnityEnsure
+  name: GG.UnityEnsure
+  href: api/GG.UnityEnsure.html
+  commentId: N:GG.UnityEnsure
+  fullName: GG.UnityEnsure
+  nameWithType: GG.UnityEnsure
+- uid: GG.UnityEnsure.DefineSymbolsViewer
+  name: DefineSymbolsViewer
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html
+  commentId: T:GG.UnityEnsure.DefineSymbolsViewer
+  fullName: GG.UnityEnsure.DefineSymbolsViewer
+  nameWithType: DefineSymbolsViewer
+- uid: GG.UnityEnsure.DefineSymbolsViewer.Add(System.String,System.Boolean)
+  name: Add(String, Boolean)
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_Add_System_String_System_Boolean_
+  commentId: M:GG.UnityEnsure.DefineSymbolsViewer.Add(System.String,System.Boolean)
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.Add(System.String, System.Boolean)
+  nameWithType: DefineSymbolsViewer.Add(String, Boolean)
+- uid: GG.UnityEnsure.DefineSymbolsViewer.Add(System.String,System.Collections.Generic.IEnumerable{BuildTargetGroup})
+  name: Add(String, IEnumerable<BuildTargetGroup>)
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_Add_System_String_System_Collections_Generic_IEnumerable_BuildTargetGroup__
+  commentId: M:GG.UnityEnsure.DefineSymbolsViewer.Add(System.String,System.Collections.Generic.IEnumerable{BuildTargetGroup})
+  name.vb: Add(String, IEnumerable(Of BuildTargetGroup))
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.Add(System.String, System.Collections.Generic.IEnumerable<BuildTargetGroup>)
+  fullName.vb: GG.UnityEnsure.DefineSymbolsViewer.Add(System.String, System.Collections.Generic.IEnumerable(Of BuildTargetGroup))
+  nameWithType: DefineSymbolsViewer.Add(String, IEnumerable<BuildTargetGroup>)
+  nameWithType.vb: DefineSymbolsViewer.Add(String, IEnumerable(Of BuildTargetGroup))
+- uid: GG.UnityEnsure.DefineSymbolsViewer.Add*
+  name: Add
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_Add_
+  commentId: Overload:GG.UnityEnsure.DefineSymbolsViewer.Add
+  isSpec: "True"
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.Add
+  nameWithType: DefineSymbolsViewer.Add
+- uid: GG.UnityEnsure.DefineSymbolsViewer.ApplyAllChangesToPlayerSettings(BuildTargetGroup,System.Collections.Generic.List{System.String})
+  name: ApplyAllChangesToPlayerSettings(BuildTargetGroup, List<String>)
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_ApplyAllChangesToPlayerSettings_BuildTargetGroup_System_Collections_Generic_List_System_String__
+  commentId: M:GG.UnityEnsure.DefineSymbolsViewer.ApplyAllChangesToPlayerSettings(BuildTargetGroup,System.Collections.Generic.List{System.String})
+  name.vb: ApplyAllChangesToPlayerSettings(BuildTargetGroup, List(Of String))
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.ApplyAllChangesToPlayerSettings(BuildTargetGroup, System.Collections.Generic.List<System.String>)
+  fullName.vb: GG.UnityEnsure.DefineSymbolsViewer.ApplyAllChangesToPlayerSettings(BuildTargetGroup, System.Collections.Generic.List(Of System.String))
+  nameWithType: DefineSymbolsViewer.ApplyAllChangesToPlayerSettings(BuildTargetGroup, List<String>)
+  nameWithType.vb: DefineSymbolsViewer.ApplyAllChangesToPlayerSettings(BuildTargetGroup, List(Of String))
+- uid: GG.UnityEnsure.DefineSymbolsViewer.ApplyAllChangesToPlayerSettings*
+  name: ApplyAllChangesToPlayerSettings
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_ApplyAllChangesToPlayerSettings_
+  commentId: Overload:GG.UnityEnsure.DefineSymbolsViewer.ApplyAllChangesToPlayerSettings
+  isSpec: "True"
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.ApplyAllChangesToPlayerSettings
+  nameWithType: DefineSymbolsViewer.ApplyAllChangesToPlayerSettings
+- uid: GG.UnityEnsure.DefineSymbolsViewer.GetAllSymbolsFromPlayerSettings(BuildTargetGroup,System.Collections.Generic.List{System.String}@)
+  name: GetAllSymbolsFromPlayerSettings(BuildTargetGroup, ref List<String>)
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_GetAllSymbolsFromPlayerSettings_BuildTargetGroup_System_Collections_Generic_List_System_String___
+  commentId: M:GG.UnityEnsure.DefineSymbolsViewer.GetAllSymbolsFromPlayerSettings(BuildTargetGroup,System.Collections.Generic.List{System.String}@)
+  name.vb: GetAllSymbolsFromPlayerSettings(BuildTargetGroup, ByRef List(Of String))
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.GetAllSymbolsFromPlayerSettings(BuildTargetGroup, ref System.Collections.Generic.List<System.String>)
+  fullName.vb: GG.UnityEnsure.DefineSymbolsViewer.GetAllSymbolsFromPlayerSettings(BuildTargetGroup, ByRef System.Collections.Generic.List(Of System.String))
+  nameWithType: DefineSymbolsViewer.GetAllSymbolsFromPlayerSettings(BuildTargetGroup, ref List<String>)
+  nameWithType.vb: DefineSymbolsViewer.GetAllSymbolsFromPlayerSettings(BuildTargetGroup, ByRef List(Of String))
+- uid: GG.UnityEnsure.DefineSymbolsViewer.GetAllSymbolsFromPlayerSettings*
+  name: GetAllSymbolsFromPlayerSettings
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_GetAllSymbolsFromPlayerSettings_
+  commentId: Overload:GG.UnityEnsure.DefineSymbolsViewer.GetAllSymbolsFromPlayerSettings
+  isSpec: "True"
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.GetAllSymbolsFromPlayerSettings
+  nameWithType: DefineSymbolsViewer.GetAllSymbolsFromPlayerSettings
+- uid: GG.UnityEnsure.DefineSymbolsViewer.Init
+  name: Init()
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_Init
+  commentId: M:GG.UnityEnsure.DefineSymbolsViewer.Init
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.Init()
+  nameWithType: DefineSymbolsViewer.Init()
+- uid: GG.UnityEnsure.DefineSymbolsViewer.Init*
+  name: Init
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_Init_
+  commentId: Overload:GG.UnityEnsure.DefineSymbolsViewer.Init
+  isSpec: "True"
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.Init
+  nameWithType: DefineSymbolsViewer.Init
+- uid: GG.UnityEnsure.DefineSymbolsViewer.Remove(System.String,System.Boolean)
+  name: Remove(String, Boolean)
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_Remove_System_String_System_Boolean_
+  commentId: M:GG.UnityEnsure.DefineSymbolsViewer.Remove(System.String,System.Boolean)
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.Remove(System.String, System.Boolean)
+  nameWithType: DefineSymbolsViewer.Remove(String, Boolean)
+- uid: GG.UnityEnsure.DefineSymbolsViewer.Remove*
+  name: Remove
+  href: api/GG.UnityEnsure.DefineSymbolsViewer.html#GG_UnityEnsure_DefineSymbolsViewer_Remove_
+  commentId: Overload:GG.UnityEnsure.DefineSymbolsViewer.Remove
+  isSpec: "True"
+  fullName: GG.UnityEnsure.DefineSymbolsViewer.Remove
+  nameWithType: DefineSymbolsViewer.Remove
+- uid: GG.UnityEnsure.EnsureUnityDefine
+  name: EnsureUnityDefine
+  href: api/GG.UnityEnsure.EnsureUnityDefine.html
+  commentId: T:GG.UnityEnsure.EnsureUnityDefine
+  fullName: GG.UnityEnsure.EnsureUnityDefine
+  nameWithType: EnsureUnityDefine
+- uid: GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol(System.Collections.Generic.List{BuildTargetGroup},System.String[])
+  name: EnsureScriptingDefineSymbol(List<BuildTargetGroup>, String[])
+  href: api/GG.UnityEnsure.EnsureUnityDefine.html#GG_UnityEnsure_EnsureUnityDefine_EnsureScriptingDefineSymbol_System_Collections_Generic_List_BuildTargetGroup__System_String___
+  commentId: M:GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol(System.Collections.Generic.List{BuildTargetGroup},System.String[])
+  name.vb: EnsureScriptingDefineSymbol(List(Of BuildTargetGroup), String())
+  fullName: GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol(System.Collections.Generic.List<BuildTargetGroup>, System.String[])
+  fullName.vb: GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol(System.Collections.Generic.List(Of BuildTargetGroup), System.String())
+  nameWithType: EnsureUnityDefine.EnsureScriptingDefineSymbol(List<BuildTargetGroup>, String[])
+  nameWithType.vb: EnsureUnityDefine.EnsureScriptingDefineSymbol(List(Of BuildTargetGroup), String())
+- uid: GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol(System.String[])
+  name: EnsureScriptingDefineSymbol(String[])
+  href: api/GG.UnityEnsure.EnsureUnityDefine.html#GG_UnityEnsure_EnsureUnityDefine_EnsureScriptingDefineSymbol_System_String___
+  commentId: M:GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol(System.String[])
+  name.vb: EnsureScriptingDefineSymbol(String())
+  fullName: GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol(System.String[])
+  fullName.vb: GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol(System.String())
+  nameWithType: EnsureUnityDefine.EnsureScriptingDefineSymbol(String[])
+  nameWithType.vb: EnsureUnityDefine.EnsureScriptingDefineSymbol(String())
+- uid: GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol*
+  name: EnsureScriptingDefineSymbol
+  href: api/GG.UnityEnsure.EnsureUnityDefine.html#GG_UnityEnsure_EnsureUnityDefine_EnsureScriptingDefineSymbol_
+  commentId: Overload:GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol
+  isSpec: "True"
+  fullName: GG.UnityEnsure.EnsureUnityDefine.EnsureScriptingDefineSymbol
+  nameWithType: EnsureUnityDefine.EnsureScriptingDefineSymbol
+- uid: GG.UnityEnsure.EnsureUnityLayer
+  name: EnsureUnityLayer
+  href: api/GG.UnityEnsure.EnsureUnityLayer.html
+  commentId: T:GG.UnityEnsure.EnsureUnityLayer
+  fullName: GG.UnityEnsure.EnsureUnityLayer
+  nameWithType: EnsureUnityLayer
+- uid: GG.UnityEnsure.EnsureUnityLayer.EnsureLayers(System.String[])
+  name: EnsureLayers(String[])
+  href: api/GG.UnityEnsure.EnsureUnityLayer.html#GG_UnityEnsure_EnsureUnityLayer_EnsureLayers_System_String___
+  commentId: M:GG.UnityEnsure.EnsureUnityLayer.EnsureLayers(System.String[])
+  name.vb: EnsureLayers(String())
+  fullName: GG.UnityEnsure.EnsureUnityLayer.EnsureLayers(System.String[])
+  fullName.vb: GG.UnityEnsure.EnsureUnityLayer.EnsureLayers(System.String())
+  nameWithType: EnsureUnityLayer.EnsureLayers(String[])
+  nameWithType.vb: EnsureUnityLayer.EnsureLayers(String())
+- uid: GG.UnityEnsure.EnsureUnityLayer.EnsureLayers*
+  name: EnsureLayers
+  href: api/GG.UnityEnsure.EnsureUnityLayer.html#GG_UnityEnsure_EnsureUnityLayer_EnsureLayers_
+  commentId: Overload:GG.UnityEnsure.EnsureUnityLayer.EnsureLayers
+  isSpec: "True"
+  fullName: GG.UnityEnsure.EnsureUnityLayer.EnsureLayers
+  nameWithType: EnsureUnityLayer.EnsureLayers
+- uid: GG.UnityEnsure.EnsureUpmScope
+  name: EnsureUpmScope
+  href: api/GG.UnityEnsure.EnsureUpmScope.html
+  commentId: T:GG.UnityEnsure.EnsureUpmScope
+  fullName: GG.UnityEnsure.EnsureUpmScope
+  nameWithType: EnsureUpmScope
+- uid: GG.UnityEnsure.EnsureUpmScope.EnsurePackageScope(System.String,System.Collections.Generic.List{System.String},System.String)
+  name: EnsurePackageScope(String, List<String>, String)
+  href: api/GG.UnityEnsure.EnsureUpmScope.html#GG_UnityEnsure_EnsureUpmScope_EnsurePackageScope_System_String_System_Collections_Generic_List_System_String__System_String_
+  commentId: M:GG.UnityEnsure.EnsureUpmScope.EnsurePackageScope(System.String,System.Collections.Generic.List{System.String},System.String)
+  name.vb: EnsurePackageScope(String, List(Of String), String)
+  fullName: GG.UnityEnsure.EnsureUpmScope.EnsurePackageScope(System.String, System.Collections.Generic.List<System.String>, System.String)
+  fullName.vb: GG.UnityEnsure.EnsureUpmScope.EnsurePackageScope(System.String, System.Collections.Generic.List(Of System.String), System.String)
+  nameWithType: EnsureUpmScope.EnsurePackageScope(String, List<String>, String)
+  nameWithType.vb: EnsureUpmScope.EnsurePackageScope(String, List(Of String), String)
+- uid: GG.UnityEnsure.EnsureUpmScope.EnsurePackageScope(System.String,System.String,System.String)
+  name: EnsurePackageScope(String, String, String)
+  href: api/GG.UnityEnsure.EnsureUpmScope.html#GG_UnityEnsure_EnsureUpmScope_EnsurePackageScope_System_String_System_String_System_String_
+  commentId: M:GG.UnityEnsure.EnsureUpmScope.EnsurePackageScope(System.String,System.String,System.String)
+  fullName: GG.UnityEnsure.EnsureUpmScope.EnsurePackageScope(System.String, System.String, System.String)
+  nameWithType: EnsureUpmScope.EnsurePackageScope(String, String, String)
+- uid: GG.UnityEnsure.EnsureUpmScope.EnsurePackageScope*
+  name: EnsurePackageScope
+  href: api/GG.UnityEnsure.EnsureUpmScope.html#GG_UnityEnsure_EnsureUpmScope_EnsurePackageScope_
+  commentId: Overload:GG.UnityEnsure.EnsureUpmScope.EnsurePackageScope
+  isSpec: "True"
+  fullName: GG.UnityEnsure.EnsureUpmScope.EnsurePackageScope
+  nameWithType: EnsureUpmScope.EnsurePackageScope
+- uid: GG.UnityEnsure.Manifest
+  name: Manifest
+  href: api/GG.UnityEnsure.Manifest.html
+  commentId: T:GG.UnityEnsure.Manifest
+  fullName: GG.UnityEnsure.Manifest
+  nameWithType: Manifest
+- uid: GG.UnityEnsure.Manifest.dependencies
+  name: dependencies
+  href: api/GG.UnityEnsure.Manifest.html#GG_UnityEnsure_Manifest_dependencies
+  commentId: P:GG.UnityEnsure.Manifest.dependencies
+  fullName: GG.UnityEnsure.Manifest.dependencies
+  nameWithType: Manifest.dependencies
+- uid: GG.UnityEnsure.Manifest.dependencies*
+  name: dependencies
+  href: api/GG.UnityEnsure.Manifest.html#GG_UnityEnsure_Manifest_dependencies_
+  commentId: Overload:GG.UnityEnsure.Manifest.dependencies
+  isSpec: "True"
+  fullName: GG.UnityEnsure.Manifest.dependencies
+  nameWithType: Manifest.dependencies
+- uid: GG.UnityEnsure.Manifest.scopedRegistries
+  name: scopedRegistries
+  href: api/GG.UnityEnsure.Manifest.html#GG_UnityEnsure_Manifest_scopedRegistries
+  commentId: P:GG.UnityEnsure.Manifest.scopedRegistries
+  fullName: GG.UnityEnsure.Manifest.scopedRegistries
+  nameWithType: Manifest.scopedRegistries
+- uid: GG.UnityEnsure.Manifest.scopedRegistries*
+  name: scopedRegistries
+  href: api/GG.UnityEnsure.Manifest.html#GG_UnityEnsure_Manifest_scopedRegistries_
+  commentId: Overload:GG.UnityEnsure.Manifest.scopedRegistries
+  isSpec: "True"
+  fullName: GG.UnityEnsure.Manifest.scopedRegistries
+  nameWithType: Manifest.scopedRegistries
+- uid: GG.UnityEnsure.ScopedRegistry
+  name: ScopedRegistry
+  href: api/GG.UnityEnsure.ScopedRegistry.html
+  commentId: T:GG.UnityEnsure.ScopedRegistry
+  fullName: GG.UnityEnsure.ScopedRegistry
+  nameWithType: ScopedRegistry
+- uid: GG.UnityEnsure.ScopedRegistry.#ctor
+  name: ScopedRegistry()
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry__ctor
+  commentId: M:GG.UnityEnsure.ScopedRegistry.#ctor
+  fullName: GG.UnityEnsure.ScopedRegistry.ScopedRegistry()
+  nameWithType: ScopedRegistry.ScopedRegistry()
+- uid: GG.UnityEnsure.ScopedRegistry.#ctor(System.String,System.String)
+  name: ScopedRegistry(String, String)
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry__ctor_System_String_System_String_
+  commentId: M:GG.UnityEnsure.ScopedRegistry.#ctor(System.String,System.String)
+  fullName: GG.UnityEnsure.ScopedRegistry.ScopedRegistry(System.String, System.String)
+  nameWithType: ScopedRegistry.ScopedRegistry(String, String)
+- uid: GG.UnityEnsure.ScopedRegistry.#ctor*
+  name: ScopedRegistry
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry__ctor_
+  commentId: Overload:GG.UnityEnsure.ScopedRegistry.#ctor
+  isSpec: "True"
+  fullName: GG.UnityEnsure.ScopedRegistry.ScopedRegistry
+  nameWithType: ScopedRegistry.ScopedRegistry
+- uid: GG.UnityEnsure.ScopedRegistry.Equals(GG.UnityEnsure.ScopedRegistry)
+  name: Equals(ScopedRegistry)
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_Equals_GG_UnityEnsure_ScopedRegistry_
+  commentId: M:GG.UnityEnsure.ScopedRegistry.Equals(GG.UnityEnsure.ScopedRegistry)
+  fullName: GG.UnityEnsure.ScopedRegistry.Equals(GG.UnityEnsure.ScopedRegistry)
+  nameWithType: ScopedRegistry.Equals(ScopedRegistry)
+- uid: GG.UnityEnsure.ScopedRegistry.Equals(System.Object)
+  name: Equals(Object)
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_Equals_System_Object_
+  commentId: M:GG.UnityEnsure.ScopedRegistry.Equals(System.Object)
+  fullName: GG.UnityEnsure.ScopedRegistry.Equals(System.Object)
+  nameWithType: ScopedRegistry.Equals(Object)
+- uid: GG.UnityEnsure.ScopedRegistry.Equals*
+  name: Equals
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_Equals_
+  commentId: Overload:GG.UnityEnsure.ScopedRegistry.Equals
+  isSpec: "True"
+  fullName: GG.UnityEnsure.ScopedRegistry.Equals
+  nameWithType: ScopedRegistry.Equals
+- uid: GG.UnityEnsure.ScopedRegistry.GetHashCode
+  name: GetHashCode()
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_GetHashCode
+  commentId: M:GG.UnityEnsure.ScopedRegistry.GetHashCode
+  fullName: GG.UnityEnsure.ScopedRegistry.GetHashCode()
+  nameWithType: ScopedRegistry.GetHashCode()
+- uid: GG.UnityEnsure.ScopedRegistry.GetHashCode*
+  name: GetHashCode
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_GetHashCode_
+  commentId: Overload:GG.UnityEnsure.ScopedRegistry.GetHashCode
+  isSpec: "True"
+  fullName: GG.UnityEnsure.ScopedRegistry.GetHashCode
+  nameWithType: ScopedRegistry.GetHashCode
+- uid: GG.UnityEnsure.ScopedRegistry.name
+  name: name
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_name
+  commentId: P:GG.UnityEnsure.ScopedRegistry.name
+  fullName: GG.UnityEnsure.ScopedRegistry.name
+  nameWithType: ScopedRegistry.name
+- uid: GG.UnityEnsure.ScopedRegistry.name*
+  name: name
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_name_
+  commentId: Overload:GG.UnityEnsure.ScopedRegistry.name
+  isSpec: "True"
+  fullName: GG.UnityEnsure.ScopedRegistry.name
+  nameWithType: ScopedRegistry.name
+- uid: GG.UnityEnsure.ScopedRegistry.scopes
+  name: scopes
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_scopes
+  commentId: P:GG.UnityEnsure.ScopedRegistry.scopes
+  fullName: GG.UnityEnsure.ScopedRegistry.scopes
+  nameWithType: ScopedRegistry.scopes
+- uid: GG.UnityEnsure.ScopedRegistry.scopes*
+  name: scopes
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_scopes_
+  commentId: Overload:GG.UnityEnsure.ScopedRegistry.scopes
+  isSpec: "True"
+  fullName: GG.UnityEnsure.ScopedRegistry.scopes
+  nameWithType: ScopedRegistry.scopes
+- uid: GG.UnityEnsure.ScopedRegistry.url
+  name: url
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_url
+  commentId: P:GG.UnityEnsure.ScopedRegistry.url
+  fullName: GG.UnityEnsure.ScopedRegistry.url
+  nameWithType: ScopedRegistry.url
+- uid: GG.UnityEnsure.ScopedRegistry.url*
+  name: url
+  href: api/GG.UnityEnsure.ScopedRegistry.html#GG_UnityEnsure_ScopedRegistry_url_
+  commentId: Overload:GG.UnityEnsure.ScopedRegistry.url
+  isSpec: "True"
+  fullName: GG.UnityEnsure.ScopedRegistry.url
+  nameWithType: ScopedRegistry.url

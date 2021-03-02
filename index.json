@@ -1,0 +1,42 @@
+{
+  "api/GG.UnityEnsure.DefineSymbolsViewer.html": {
+    "href": "api/GG.UnityEnsure.DefineSymbolsViewer.html",
+    "title": "Class DefineSymbolsViewer | Documentation",
+    "keywords": "Class DefineSymbolsViewer Inheritance Object DefineSymbolsViewer Namespace : GG.UnityEnsure Assembly : GG.UnityEnsure.dll Syntax public class DefineSymbolsViewer : EditorWindow Methods | Improve this Doc View Source Add(String, Boolean) Add define symbols as soon as Unity gets done compiling. Declaration public static void Add(string define, bool applyToAll = true) Parameters Type Name Description String define Boolean applyToAll | Improve this Doc View Source Add(String, IEnumerable<BuildTargetGroup>) Add define symbols as soon as Unity gets done compiling. Declaration public static void Add(string define, IEnumerable<BuildTargetGroup> groups) Parameters Type Name Description String define IEnumerable < BuildTargetGroup > groups | Improve this Doc View Source ApplyAllChangesToPlayerSettings(BuildTargetGroup, List<String>) Declaration public void ApplyAllChangesToPlayerSettings(BuildTargetGroup targetGroup, List<string> definedList) Parameters Type Name Description BuildTargetGroup targetGroup List < String > definedList | Improve this Doc View Source GetAllSymbolsFromPlayerSettings(BuildTargetGroup, ref List<String>) Declaration public static void GetAllSymbolsFromPlayerSettings(BuildTargetGroup targetGroup, ref List<string> definedList) Parameters Type Name Description BuildTargetGroup targetGroup List < String > definedList | Improve this Doc View Source Init() Declaration public static void Init() | Improve this Doc View Source Remove(String, Boolean) Declaration public static void Remove(string define, bool applyToAll = true) Parameters Type Name Description String define Boolean applyToAll"
+  },
+  "api/GG.UnityEnsure.EnsureUnityDefine.html": {
+    "href": "api/GG.UnityEnsure.EnsureUnityDefine.html",
+    "title": "Class EnsureUnityDefine | Documentation",
+    "keywords": "Class EnsureUnityDefine Inheritance Object EnsureUnityDefine Namespace : GG.UnityEnsure Assembly : GG.UnityEnsure.dll Syntax public static class EnsureUnityDefine Methods | Improve this Doc View Source EnsureScriptingDefineSymbol(List<BuildTargetGroup>, String[]) Ensure the Define Symbol Exists Declaration public static void EnsureScriptingDefineSymbol(List<BuildTargetGroup> targetGroups, params string[] defines) Parameters Type Name Description List < BuildTargetGroup > targetGroups Target platforms String [] defines | Improve this Doc View Source EnsureScriptingDefineSymbol(String[]) Ensure the Define Symbol Exists Declaration public static void EnsureScriptingDefineSymbol(params string[] defines) Parameters Type Name Description String [] defines"
+  },
+  "api/GG.UnityEnsure.EnsureUnityLayer.html": {
+    "href": "api/GG.UnityEnsure.EnsureUnityLayer.html",
+    "title": "Class EnsureUnityLayer | Documentation",
+    "keywords": "Class EnsureUnityLayer Inheritance Object EnsureUnityLayer Namespace : GG.UnityEnsure Assembly : GG.UnityEnsure.dll Syntax public static class EnsureUnityLayer Methods | Improve this Doc View Source EnsureLayers(String[]) Create a layer at the next available index. Returns silently if layer already exists. Declaration public static void EnsureLayers(params string[] list) Parameters Type Name Description String [] list Name of the layers to create"
+  },
+  "api/GG.UnityEnsure.EnsureUpmScope.html": {
+    "href": "api/GG.UnityEnsure.EnsureUpmScope.html",
+    "title": "Class EnsureUpmScope | Documentation",
+    "keywords": "Class EnsureUpmScope Inheritance Object EnsureUpmScope Namespace : GG.UnityEnsure Assembly : GG.UnityEnsure.dll Syntax public static class EnsureUpmScope Methods | Improve this Doc View Source EnsurePackageScope(String, List<String>, String) Ensure the Define Symbol Exists Declaration public static void EnsurePackageScope(string url, List<string> scopes, string name = \"\") Parameters Type Name Description String url List < String > scopes String name | Improve this Doc View Source EnsurePackageScope(String, String, String) Ensure the Define Symbol Exists Declaration public static void EnsurePackageScope(string url, string scope, string name = \"\") Parameters Type Name Description String url String scope String name"
+  },
+  "api/GG.UnityEnsure.html": {
+    "href": "api/GG.UnityEnsure.html",
+    "title": "Namespace GG.UnityEnsure | Documentation",
+    "keywords": "Namespace GG.UnityEnsure Classes DefineSymbolsViewer EnsureUnityDefine EnsureUnityLayer EnsureUpmScope Manifest ScopedRegistry"
+  },
+  "api/GG.UnityEnsure.Manifest.html": {
+    "href": "api/GG.UnityEnsure.Manifest.html",
+    "title": "Class Manifest | Documentation",
+    "keywords": "Class Manifest Inheritance Object Manifest Namespace : GG.UnityEnsure Assembly : GG.UnityEnsure.dll Syntax public class Manifest Properties | Improve this Doc View Source dependencies Declaration public Dictionary<string, string> dependencies { get; set; } Property Value Type Description Dictionary < String , String > | Improve this Doc View Source scopedRegistries Declaration public List<ScopedRegistry> scopedRegistries { get; set; } Property Value Type Description List < ScopedRegistry >"
+  },
+  "api/GG.UnityEnsure.ScopedRegistry.html": {
+    "href": "api/GG.UnityEnsure.ScopedRegistry.html",
+    "title": "Class ScopedRegistry | Documentation",
+    "keywords": "Class ScopedRegistry Inheritance Object ScopedRegistry Namespace : GG.UnityEnsure Assembly : GG.UnityEnsure.dll Syntax public class ScopedRegistry Constructors | Improve this Doc View Source ScopedRegistry() Declaration public ScopedRegistry() | Improve this Doc View Source ScopedRegistry(String, String) Declaration public ScopedRegistry(string name, string url) Parameters Type Name Description String name String url Properties | Improve this Doc View Source name Declaration public string name { get; set; } Property Value Type Description String | Improve this Doc View Source scopes Declaration public List<string> scopes { get; set; } Property Value Type Description List < String > | Improve this Doc View Source url Declaration public string url { get; set; } Property Value Type Description String Methods | Improve this Doc View Source Equals(ScopedRegistry) Declaration public bool Equals(ScopedRegistry other) Parameters Type Name Description ScopedRegistry other Returns Type Description Boolean | Improve this Doc View Source Equals(Object) Declaration public override bool Equals(object obj) Parameters Type Name Description Object obj Returns Type Description Boolean Overrides Object.Equals(Object) | Improve this Doc View Source GetHashCode() Declaration public override int GetHashCode() Returns Type Description Int32 Overrides Object.GetHashCode()"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Title | Documentation",
+    "keywords": "Title content content"
+  }
+}
