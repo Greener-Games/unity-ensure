@@ -1,0 +1,7 @@
+apiRules:
+- include:
+    uidRegex: ^Global
+    type: Namespace
+- exclude:
+    uidRegex: .* # Every other namespaces are ignored
+    type: Namespace
