@@ -30,11 +30,21 @@ namespace GG.UnityEnsure
             //Check that the scope does not already exist somewhere else
             foreach (KeyValuePair<string, string> dependency in packageInfo.dependencies)
             {
-                if (dependency.Key != package)
+                if (dependency.Key == package)
                 {
                     Debug.LogWarning($"Scope already exists in registry {dependency.Key}");
+
+                    if (dependency.Value != version)
+                    {
+                        //todo add a check here that can check a version and offer to update before just canceling
+                        return;
+                    }
+                    else
+                    {
+                        return;
+                    }
                 }
-                return;
+
             }
             
             packageInfo.dependencies.Add(package, version);
