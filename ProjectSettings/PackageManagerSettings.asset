@@ -26,7 +26,7 @@ MonoBehaviour:
     m_Scopes:
     - com.greener-games
     m_IsDefault: 0
-  m_UserSelectedRegistryName: tester
+  m_UserSelectedRegistryName: 
   m_UserAddingNewScopedRegistry: 0
   m_RegistryInfoDraft:
     m_ErrorMessage: 
