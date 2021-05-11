@@ -55,8 +55,8 @@ namespace GG.UnityEnsure
                 if (packageInfoScopedRegistry.url != url)
                 {
                     Debug.LogWarning($"Scope already exists in registry {packageInfoScopedRegistry.url}");
+                    return;
                 }
-                return;
             }
             
             ScopedRegistry registry = packageInfo.scopedRegistries.FirstOrDefault(x => x.url == url);
