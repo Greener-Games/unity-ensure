@@ -1,13 +1,11 @@
-﻿using System.Collections.Generic;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-namespace GG.UnityEnsure
+namespace GG.UnityEnsure.Xr
 {
-    public static class EnsureUnityLayer
+    #if Interaction_Toolkit
+    public static class EnsureUnityInteractionLayer
     {
         /// <summary>
         /// Create a layer at the next available index. Returns silently if layer already exists.
@@ -28,8 +26,8 @@ namespace GG.UnityEnsure
                 throw new System.ArgumentNullException(layer, "New layer name string is either null or empty.");
             }
 
-            SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
-            SerializedProperty layerProps = tagManager.FindProperty("layers");
+            SerializedObject layerManager = new SerializedObject(Resources.Load("InteractionLayerSettings"));
+            SerializedProperty layerProps = layerManager.FindProperty("m_LayerNames");
             int propCount = layerProps.arraySize;
 
             SerializedProperty firstEmptyProp = null;
@@ -55,8 +53,9 @@ namespace GG.UnityEnsure
             }
 
             firstEmptyProp.stringValue = layer;
-            tagManager.ApplyModifiedProperties();
-            tagManager.Update();
+            layerManager.ApplyModifiedProperties();
+            layerManager.Update();
         }
     }
+    #endif
 }
