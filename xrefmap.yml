@@ -146,6 +146,25 @@ references:
   isSpec: "True"
   fullName: GG.UnityEnsure.EnsureUnityLayer.EnsureLayers
   nameWithType: EnsureUnityLayer.EnsureLayers
+- uid: GG.UnityEnsure.EnsureUpmPackage
+  name: EnsureUpmPackage
+  href: api/GG.UnityEnsure.EnsureUpmPackage.html
+  commentId: T:GG.UnityEnsure.EnsureUpmPackage
+  fullName: GG.UnityEnsure.EnsureUpmPackage
+  nameWithType: EnsureUpmPackage
+- uid: GG.UnityEnsure.EnsureUpmPackage.EnsurePackageDependency(System.String,System.String)
+  name: EnsurePackageDependency(String, String)
+  href: api/GG.UnityEnsure.EnsureUpmPackage.html#GG_UnityEnsure_EnsureUpmPackage_EnsurePackageDependency_System_String_System_String_
+  commentId: M:GG.UnityEnsure.EnsureUpmPackage.EnsurePackageDependency(System.String,System.String)
+  fullName: GG.UnityEnsure.EnsureUpmPackage.EnsurePackageDependency(System.String, System.String)
+  nameWithType: EnsureUpmPackage.EnsurePackageDependency(String, String)
+- uid: GG.UnityEnsure.EnsureUpmPackage.EnsurePackageDependency*
+  name: EnsurePackageDependency
+  href: api/GG.UnityEnsure.EnsureUpmPackage.html#GG_UnityEnsure_EnsureUpmPackage_EnsurePackageDependency_
+  commentId: Overload:GG.UnityEnsure.EnsureUpmPackage.EnsurePackageDependency
+  isSpec: "True"
+  fullName: GG.UnityEnsure.EnsureUpmPackage.EnsurePackageDependency
+  nameWithType: EnsureUpmPackage.EnsurePackageDependency
 - uid: GG.UnityEnsure.EnsureUpmScope
   name: EnsureUpmScope
   href: api/GG.UnityEnsure.EnsureUpmScope.html
@@ -302,3 +321,17 @@ references:
   isSpec: "True"
   fullName: GG.UnityEnsure.ScopedRegistry.url
   nameWithType: ScopedRegistry.url
+- uid: Global
+  name: Global
+  href: api/Global.html
+  name.vb: ''
+  fullName: Global
+  fullName.vb: ''
+  nameWithType: Global
+  nameWithType.vb: ''
+- uid: Global.Tester
+  name: Tester
+  href: api/Global.Tester.html
+  commentId: T:Global.Tester
+  fullName: Tester
+  nameWithType: Tester

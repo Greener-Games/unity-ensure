@@ -14,6 +14,11 @@
     "title": "Class EnsureUnityLayer | Documentation",
     "keywords": "Class EnsureUnityLayer Inheritance Object EnsureUnityLayer Namespace : GG.UnityEnsure Assembly : GG.UnityEnsure.dll Syntax public static class EnsureUnityLayer Methods | Improve this Doc View Source EnsureLayers(String[]) Create a layer at the next available index. Returns silently if layer already exists. Declaration public static void EnsureLayers(params string[] list) Parameters Type Name Description String [] list Name of the layers to create"
   },
+  "api/GG.UnityEnsure.EnsureUpmPackage.html": {
+    "href": "api/GG.UnityEnsure.EnsureUpmPackage.html",
+    "title": "Class EnsureUpmPackage | Documentation",
+    "keywords": "Class EnsureUpmPackage Inheritance Object EnsureUpmPackage Namespace : GG.UnityEnsure Assembly : GG.UnityEnsure.dll Syntax public static class EnsureUpmPackage Methods | Improve this Doc View Source EnsurePackageDependency(String, String) Ensure the Define Symbol Exists Declaration public static void EnsurePackageDependency(string package, string version) Parameters Type Name Description String package String version"
+  },
   "api/GG.UnityEnsure.EnsureUpmScope.html": {
     "href": "api/GG.UnityEnsure.EnsureUpmScope.html",
     "title": "Class EnsureUpmScope | Documentation",
@@ -22,7 +27,7 @@
   "api/GG.UnityEnsure.html": {
     "href": "api/GG.UnityEnsure.html",
     "title": "Namespace GG.UnityEnsure | Documentation",
-    "keywords": "Namespace GG.UnityEnsure Classes DefineSymbolsViewer EnsureUnityDefine EnsureUnityLayer EnsureUpmScope Manifest ScopedRegistry"
+    "keywords": "Namespace GG.UnityEnsure Classes DefineSymbolsViewer EnsureUnityDefine EnsureUnityLayer EnsureUpmPackage EnsureUpmScope Manifest ScopedRegistry"
   },
   "api/GG.UnityEnsure.Manifest.html": {
     "href": "api/GG.UnityEnsure.Manifest.html",
@@ -33,6 +38,16 @@
     "href": "api/GG.UnityEnsure.ScopedRegistry.html",
     "title": "Class ScopedRegistry | Documentation",
     "keywords": "Class ScopedRegistry Inheritance Object ScopedRegistry Namespace : GG.UnityEnsure Assembly : GG.UnityEnsure.dll Syntax public class ScopedRegistry Constructors | Improve this Doc View Source ScopedRegistry() Declaration public ScopedRegistry() | Improve this Doc View Source ScopedRegistry(String, String) Declaration public ScopedRegistry(string name, string url) Parameters Type Name Description String name String url Properties | Improve this Doc View Source name Declaration public string name { get; set; } Property Value Type Description String | Improve this Doc View Source scopes Declaration public List<string> scopes { get; set; } Property Value Type Description List < String > | Improve this Doc View Source url Declaration public string url { get; set; } Property Value Type Description String Methods | Improve this Doc View Source Equals(ScopedRegistry) Declaration public bool Equals(ScopedRegistry other) Parameters Type Name Description ScopedRegistry other Returns Type Description Boolean | Improve this Doc View Source Equals(Object) Declaration public override bool Equals(object obj) Parameters Type Name Description Object obj Returns Type Description Boolean Overrides Object.Equals(Object) | Improve this Doc View Source GetHashCode() Declaration public override int GetHashCode() Returns Type Description Int32 Overrides Object.GetHashCode()"
+  },
+  "api/Global.html": {
+    "href": "api/Global.html",
+    "title": "Namespace Global | Documentation",
+    "keywords": "Namespace Global Classes Tester"
+  },
+  "api/Global.Tester.html": {
+    "href": "api/Global.Tester.html",
+    "title": "Class Tester | Documentation",
+    "keywords": "Class Tester Inheritance Object Tester Namespace : Global Assembly : Assembly-CSharp.dll Syntax public class Tester : MonoBehaviour"
   },
   "index.html": {
     "href": "index.html",
