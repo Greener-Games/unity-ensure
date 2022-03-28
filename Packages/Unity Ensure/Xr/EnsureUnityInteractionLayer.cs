@@ -1,10 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
-
 namespace GG.UnityEnsure.Xr
 {
-    #if Interaction_Toolkit
     public static class EnsureUnityInteractionLayer
     {
         /// <summary>
@@ -57,5 +54,4 @@ namespace GG.UnityEnsure.Xr
             layerManager.Update();
         }
     }
-    #endif
 }
