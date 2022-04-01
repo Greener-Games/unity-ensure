@@ -321,6 +321,34 @@ references:
   isSpec: "True"
   fullName: GG.UnityEnsure.ScopedRegistry.url
   nameWithType: ScopedRegistry.url
+- uid: GG.UnityEnsure.Xr
+  name: GG.UnityEnsure.Xr
+  href: api/GG.UnityEnsure.Xr.html
+  commentId: N:GG.UnityEnsure.Xr
+  fullName: GG.UnityEnsure.Xr
+  nameWithType: GG.UnityEnsure.Xr
+- uid: GG.UnityEnsure.Xr.EnsureUnityInteractionLayer
+  name: EnsureUnityInteractionLayer
+  href: api/GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.html
+  commentId: T:GG.UnityEnsure.Xr.EnsureUnityInteractionLayer
+  fullName: GG.UnityEnsure.Xr.EnsureUnityInteractionLayer
+  nameWithType: EnsureUnityInteractionLayer
+- uid: GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.EnsureLayers(System.String[])
+  name: EnsureLayers(String[])
+  href: api/GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.html#GG_UnityEnsure_Xr_EnsureUnityInteractionLayer_EnsureLayers_System_String___
+  commentId: M:GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.EnsureLayers(System.String[])
+  name.vb: EnsureLayers(String())
+  fullName: GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.EnsureLayers(System.String[])
+  fullName.vb: GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.EnsureLayers(System.String())
+  nameWithType: EnsureUnityInteractionLayer.EnsureLayers(String[])
+  nameWithType.vb: EnsureUnityInteractionLayer.EnsureLayers(String())
+- uid: GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.EnsureLayers*
+  name: EnsureLayers
+  href: api/GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.html#GG_UnityEnsure_Xr_EnsureUnityInteractionLayer_EnsureLayers_
+  commentId: Overload:GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.EnsureLayers
+  isSpec: "True"
+  fullName: GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.EnsureLayers
+  nameWithType: EnsureUnityInteractionLayer.EnsureLayers
 - uid: Global
   name: Global
   href: api/Global.html

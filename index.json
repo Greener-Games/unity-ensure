@@ -39,6 +39,16 @@
     "title": "Class ScopedRegistry | Documentation",
     "keywords": "Class ScopedRegistry Inheritance Object ScopedRegistry Namespace : GG.UnityEnsure Assembly : GG.UnityEnsure.dll Syntax public class ScopedRegistry Constructors | Improve this Doc View Source ScopedRegistry() Declaration public ScopedRegistry() | Improve this Doc View Source ScopedRegistry(String, String) Declaration public ScopedRegistry(string name, string url) Parameters Type Name Description String name String url Properties | Improve this Doc View Source name Declaration public string name { get; set; } Property Value Type Description String | Improve this Doc View Source scopes Declaration public List<string> scopes { get; set; } Property Value Type Description List < String > | Improve this Doc View Source url Declaration public string url { get; set; } Property Value Type Description String Methods | Improve this Doc View Source Equals(ScopedRegistry) Declaration public bool Equals(ScopedRegistry other) Parameters Type Name Description ScopedRegistry other Returns Type Description Boolean | Improve this Doc View Source Equals(Object) Declaration public override bool Equals(object obj) Parameters Type Name Description Object obj Returns Type Description Boolean Overrides Object.Equals(Object) | Improve this Doc View Source GetHashCode() Declaration public override int GetHashCode() Returns Type Description Int32 Overrides Object.GetHashCode()"
   },
+  "api/GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.html": {
+    "href": "api/GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.html",
+    "title": "Class EnsureUnityInteractionLayer | Documentation",
+    "keywords": "Class EnsureUnityInteractionLayer Inheritance Object EnsureUnityInteractionLayer Namespace : GG.UnityEnsure.Xr Assembly : GG.UnityEnsure.Xr.dll Syntax public static class EnsureUnityInteractionLayer Methods | Improve this Doc View Source EnsureLayers(String[]) Create a layer at the next available index. Returns silently if layer already exists. Declaration public static void EnsureLayers(params string[] list) Parameters Type Name Description String [] list Name of the layers to create"
+  },
+  "api/GG.UnityEnsure.Xr.html": {
+    "href": "api/GG.UnityEnsure.Xr.html",
+    "title": "Namespace GG.UnityEnsure.Xr | Documentation",
+    "keywords": "Namespace GG.UnityEnsure.Xr Classes EnsureUnityInteractionLayer"
+  },
   "api/Global.html": {
     "href": "api/Global.html",
     "title": "Namespace Global | Documentation",

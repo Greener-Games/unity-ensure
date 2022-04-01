@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GG.UnityEnsure.DefineSymbolsViewer.html",
-          "hash": "2IIBIbLFgxOVMFf4G0oQYg=="
+          "hash": "ajot35LeS0xnFYa8LyeNQg=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GG.UnityEnsure.EnsureUnityDefine.html",
-          "hash": "UU9uZSPMCulwPoBZ8/xetQ=="
+          "hash": "1YnweC05tjo051U+t+BWDA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GG.UnityEnsure.EnsureUnityLayer.html",
-          "hash": "aNNcGHUjkKHAfqnvvmLAhw=="
+          "hash": "vuCDlvIL+XsQId5zb04LzQ=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GG.UnityEnsure.EnsureUpmPackage.html",
-          "hash": "Iu6lEoO8Vkd0XqAYbqf6gQ=="
+          "hash": "5mntQDA3vM1SdcoPb2vsqQ=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GG.UnityEnsure.EnsureUpmScope.html",
-          "hash": "w1LGNOEsC9d8dOtPUegROA=="
+          "hash": "rZpDQDFcnu8VgpF4tgNGSw=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GG.UnityEnsure.Manifest.html",
-          "hash": "DnJLXlyfZvg2YZ4CHM9Msw=="
+          "hash": "Uh6O8yehvnCtBGPZnV1vfA=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,31 @@
       "output": {
         ".html": {
           "relative_path": "api/GG.UnityEnsure.ScopedRegistry.html",
-          "hash": "+6WkOGdBMXK8uDRtaZnqBg=="
+          "hash": "EpEUt24rfXDOSAsLmAJeEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GG.UnityEnsure.Xr.EnsureUnityInteractionLayer.html",
+          "hash": "Dt4BXuFOVoc6LJv7IwxXtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GG.UnityEnsure.Xr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GG.UnityEnsure.Xr.html",
+          "hash": "h4+kHwAXqT5HnpmpE3c3dg=="
         }
       },
       "is_incremental": false,
@@ -114,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Tester.html",
-          "hash": "nutqE35il1wosHz234PVqg=="
+          "hash": "Fk8MWm8aX5iI5KkcWDU61Q=="
         }
       },
       "is_incremental": false,
@@ -138,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wQWAPhEfFCHhG53HHBaWbw=="
+          "hash": "8+IuSduWMQ+FK0XEpktocQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "s7QAkGM/+QZotC9Aa0ayTg=="
+          "hash": "b6Fe0WIsgiLlu/+xQgG48A=="
         }
       },
       "is_incremental": false,
@@ -211,7 +235,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 10,
+          "total_file_count": 12,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
